@@ -92,6 +92,11 @@ public class MagicMath extends javax.swing.JFrame {
         });
 
         jButton1.setText("Largest");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         LargestAnswer.setText("...");
 
@@ -122,6 +127,11 @@ public class MagicMath extends javax.swing.JFrame {
         Powertxt2.setText(" ");
 
         Powerbtn.setText("Power");
+        Powerbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PowerbtnActionPerformed(evt);
+            }
+        });
 
         PowerAnswer.setText("...");
 
@@ -132,6 +142,11 @@ public class MagicMath extends javax.swing.JFrame {
         hypotTxt2.setText(" ");
 
         hyptoBtn.setText("Hypotenuse");
+        hyptoBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hyptoBtnActionPerformed(evt);
+            }
+        });
 
         HypotAnswer.setText("...");
 
@@ -140,6 +155,11 @@ public class MagicMath extends javax.swing.JFrame {
         RndDwnTxt1.setText("  ");
 
         RndDwnBtn.setText("Round Down");
+        RndDwnBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RndDwnBtnActionPerformed(evt);
+            }
+        });
 
         RndDwnAnswer.setText("...");
 
@@ -148,6 +168,11 @@ public class MagicMath extends javax.swing.JFrame {
         RndUpTxt1.setText(" ");
 
         RndUpBtn.setText("Round Up");
+        RndUpBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RndUpBtnActionPerformed(evt);
+            }
+        });
 
         RndUpAnswer.setText("...");
 
@@ -156,6 +181,11 @@ public class MagicMath extends javax.swing.JFrame {
         SqrtTxt.setText(" ");
 
         SqrtBtn.setText("Square Root");
+        SqrtBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SqrtBtnActionPerformed(evt);
+            }
+        });
 
         SqrtAnswer.setText("...");
 
@@ -164,6 +194,11 @@ public class MagicMath extends javax.swing.JFrame {
         RadiansTxt.setText(" ");
 
         RadiansBtn.setText("Radians");
+        RadiansBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadiansBtnActionPerformed(evt);
+            }
+        });
 
         RadiansAnswer.setText("...");
 
@@ -171,86 +206,89 @@ public class MagicMath extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addComponent(largestLabel)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(SmallestTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Smallesttxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(SmallestButton)
+                        .addGap(113, 113, 113)
+                        .addComponent(smallestAnswer))
+                    .addComponent(PowerLbl)
+                    .addComponent(jLabel1)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(largestLabel)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(HypotTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hypotTxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(HypotTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(hypotTxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(hyptoBtn)
                                 .addGap(91, 91, 91)
                                 .addComponent(HypotAnswer))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Largesttxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Largesttxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(Largesttxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Largesttxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton1)
                                 .addGap(116, 116, 116)
-                                .addComponent(LargestAnswer))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(SmallestTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Smallesttxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(SmallestButton)
-                                .addGap(113, 113, 113)
-                                .addComponent(smallestAnswer))
-                            .addComponent(PowerLbl)
-                            .addComponent(jLabel1))
+                                .addComponent(LargestAnswer)))))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(94, 94, 94)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RndDwnLbl)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(94, 94, 94)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(RndDwnLbl)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(RndDwnTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(RndDwnBtn))
-                                            .addComponent(jLabel2))
-                                        .addGap(18, 18, 18)
-                                        .addComponent(RndDwnAnswer))))
+                                        .addComponent(RndDwnTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(RndDwnBtn))
+                                    .addComponent(jLabel2))
+                                .addGap(18, 18, 18)
+                                .addComponent(RndDwnAnswer))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SqrtLbl)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(96, 96, 96)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(SqrtLbl)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(RndUpTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(RndUpBtn)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(RndUpAnswer)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE))
+                                .addComponent(RndUpTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(RndUpBtn)
+                                .addGap(18, 18, 18)
+                                .addComponent(RndUpAnswer)))))
+                .addContainerGap(96, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(HypotLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(RadiansLbl))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(PowerTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Powertxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(PowerTxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Powertxt2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Powerbtn)
                         .addGap(121, 121, 121)
                         .addComponent(PowerAnswer)
                         .addGap(285, 285, 285)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(RadiansTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(RadiansTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RadiansBtn)
                                 .addGap(39, 39, 39)
                                 .addComponent(RadiansAnswer))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(SqrtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(SqrtTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(SqrtBtn)
                                 .addGap(18, 18, 18)
                                 .addComponent(SqrtAnswer)))
@@ -351,8 +389,100 @@ public class MagicMath extends javax.swing.JFrame {
     }//GEN-LAST:event_SmallestTxt1ActionPerformed
 
     private void SmallestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SmallestButtonActionPerformed
+
+        double num1,num2,num3;
+        
+        num1 = Double.parseDouble(SmallestTxt1.getText());
+        num2 = Double.parseDouble(Smallesttxt2.getText());
+        num3 = Math.min(num1, num2);
+        
+        smallestAnswer.setText("Min: "+num3);
         // TODO add your handling code here:
     }//GEN-LAST:event_SmallestButtonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        double num1,num2,num3;
+        
+        num1 = Double.parseDouble(Largesttxt1.getText());
+        num2 = Double.parseDouble(Largesttxt2.getText());
+        num3 = Math.max(num1, num2);
+        
+        
+        LargestAnswer.setText("max: "+num3);
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void PowerbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PowerbtnActionPerformed
+
+        double num1,num2,num3;
+        
+        num1 = Double.parseDouble(PowerTxt1.getText());
+        num2 = Double.parseDouble(Powertxt2.getText());
+        num3 = Math.pow(num1, num2);
+        
+        PowerAnswer.setText(""+num3);
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PowerbtnActionPerformed
+
+    private void hyptoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hyptoBtnActionPerformed
+
+        double num1,num2,num3;
+        
+        num1 = Double.parseDouble(HypotTxt1.getText());
+        num2 = Double.parseDouble(hypotTxt2.getText());
+        num3 = Math.hypot(num1, num2);
+        
+        HypotAnswer.setText("Hypot: "+num3);
+        
+    }//GEN-LAST:event_hyptoBtnActionPerformed
+
+    private void RndDwnBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RndDwnBtnActionPerformed
+
+        double num1,num2;
+        
+        num1 = Double.parseDouble(RndDwnTxt1.getText());
+        num2 = Math.floor(num1);
+        
+        RndDwnAnswer.setText("Rounded: "+num2);
+        
+    }//GEN-LAST:event_RndDwnBtnActionPerformed
+
+    private void RndUpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RndUpBtnActionPerformed
+
+        double num1,num2;
+        
+        num1 = Double.parseDouble(RndUpTxt1.getText());
+        num2 = Math.ceil(num1);
+        
+        RndUpAnswer.setText("Rounded: "+num2);
+        
+    }//GEN-LAST:event_RndUpBtnActionPerformed
+
+    private void SqrtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SqrtBtnActionPerformed
+
+        double num1,num2;
+        
+        num1 = Double.parseDouble(SqrtTxt.getText());
+        num2 = Math.sqrt(num1);
+        
+        SqrtAnswer.setText("Root: "+num2);
+        
+
+    }//GEN-LAST:event_SqrtBtnActionPerformed
+
+    private void RadiansBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadiansBtnActionPerformed
+
+        double num1,num2;
+        
+        num1 = Double.parseDouble(RadiansTxt.getText());
+        num2 = Math.toRadians(num1);
+        
+        RadiansAnswer.setText("Radians: "+num2);
+        
+    }//GEN-LAST:event_RadiansBtnActionPerformed
 
     /**
      * @param args the command line arguments
